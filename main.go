@@ -6,9 +6,9 @@ func add(a int, b int) int {
 	return a + b
 }
 func main() {
-	age := 27
+	age := 16
 	fmt.Println(age)
-	age = 28
+	age = 16
 	fmt.Println(age)
 	fmt.Println("我是土木转行的，今天第2天")
 	fmt.Println(add(3, 5))
@@ -26,4 +26,14 @@ func main() {
 	fmt.Println(ages)
 	ages["Bob"] = 27
 	fmt.Println(ages["Bob"])
+	if age >= 18 {
+		fmt.Println("成年")
+	} else {
+		fmt.Println("未成年")
+	}
+	fruits := []string{"apple", "banana"}
+	fruits = append(fruits, "orange")
+	for i, f := range fruits {
+		fmt.Println(i, f)
+	}
 }
